@@ -1,0 +1,14 @@
+{
+  "name": "main-bar", // 在多显示器时设置多个bar提供标签
+  "layer": "top", // top会显示在最上层
+  "position": "top", // top bottom left right
+  "height": 30, // 不写则动态调整
+  "margin": "0, 3, 0, 3", // 边距 上 右 下 左
+  "spacing": 3, // 不同模块之间的缝隙大小
+  "reload_style_on_change": true, // 核心配置：开启热重载(修改css文件时不用重启)
+  "modules-left": [
+    "niri/workspaces"
+  ],
+  "modules-center": [],
+  "modules-right": []
+}
