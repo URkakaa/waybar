@@ -6,9 +6,21 @@
   "margin": "0, 3, 0, 3", // 边距 上 右 下 左
   "spacing": 3, // 不同模块之间的缝隙大小
   "reload_style_on_change": true, // 核心配置：开启热重载(修改css文件时不用重启)
-  "modules-left": [
-    "niri/workspaces"
+  "include": [
+    "~/.config/waybar/modules/clock.jsonc",
+    "~/.config/waybar/modules/battery.jsonc"
   ],
-  "modules-center": [],
-  "modules-right": []
+  "modules-left": [
+    "niri/workspaces",
+    "niri/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "niri/window": {
+    "max-length": 50
+  },
+  "modules-right": [
+    "battery"
+  ]
 }
