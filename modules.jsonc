@@ -1,0 +1,40 @@
+{
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-active": " {icon} ",
+    "on-click": "activate"
+    // "format-icons":{
+    //     "10":"10"
+    // }
+  },
+  "battery": {
+    "interval": 60,
+    "states": {
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}% ",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂂",
+      "󰁹"
+    ],
+    "tooltip-format": "󰂍 {power} | {timeTo}"
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%F %T}",
+    "format-alt": "{:%F %T}",
+    "interval": 1
+  },
+  "niri/window": {
+    "max-length": 50
+  }
+}

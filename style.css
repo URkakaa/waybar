@@ -16,16 +16,55 @@
 
 window#waybar {
   /* 背景色和透明度 */
-  background: rgba(43, 48, 59, 0.2);
+  background: rgba(30, 30, 46, 0);
   /* 底部边框厚度和颜色以及透明度 */
-  border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+  /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
   /* 右边边框 */
-  border-right: 3px solid rgba(80, 90, 100, 0.5);
-  border-radius: 0 0 8px 0;
-  /* 右下角圆角，配合右侧+底部边框更自然 */
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  /* 轻微阴影强化立体 */
-  height: 30px;
-  /* 固定高度，边框显示更规整 */
-  color: whitesmoke;
+  /* border-right: 3px solid rgba(80, 90, 100, 0.5); */
+  /* 文字颜色 */
+  color: whitesmoke
+}
+
+/* ----------niri/workspaces配置---------- */
+#workspaces button label {
+  color: #89b4fa;
+  font-weight: bolder;
+}
+
+#workspaces button.active label {
+  color: #11111b;
+  font-weight: bolder;
+}
+
+#workspaces {
+  background-color: transparent;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 3px;
+}
+
+#workspaces button {
+  box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+  background-color: #11111b;
+  border-radius: 15px;
+  margin-right: 4px;
+  padding: 6px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: bolder;
+  color: #89b4fa;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#workspaces button.active {
+  padding-right: 13px;
+  box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+  padding-left: 13px;
+  padding-bottom: 0px;
+  background: rgb(203, 166, 247);
+  background: radial-gradient(circle, rgba(203, 166, 247, 1) 0%, rgba(193, 168, 247, 1) 12%, rgba(249, 226, 175, 1) 19%, rgba(189, 169, 247, 1) 20%, rgba(182, 171, 247, 1) 24%, rgba(198, 255, 194, 1) 36%, rgba(177, 172, 247, 1) 37%, rgba(170, 173, 248, 1) 48%, rgba(255, 255, 255, 1) 52%, rgba(166, 174, 248, 1) 52%, rgba(160, 175, 248, 1) 59%, rgba(148, 226, 213, 1) 66%, rgba(155, 176, 248, 1) 67%, rgba(152, 177, 248, 1) 68%, rgba(205, 214, 244, 1) 77%, rgba(148, 178, 249, 1) 78%, rgba(144, 179, 250, 1) 82%, rgba(180, 190, 254, 1) 83%, rgba(141, 179, 250, 1) 90%, rgba(137, 180, 250, 1) 100%);
+  background-size: 400% 400%;
+  animation: gradient_f 20s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
 }
