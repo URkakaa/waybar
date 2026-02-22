@@ -1,12 +1,23 @@
 {
   "battery": {
-    "format": "{capacity}% {icon}",
+    "interval": 60,
+    "states": {
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}% ",
     "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂂",
+      "󰁹"
+    ],
+    "tooltip-format": "󰂍 {power} | {timeTo}"
   }
 }
