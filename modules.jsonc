@@ -7,6 +7,13 @@
     //     "10":"10"
     // }
   },
+  "clock": {
+    // "timezone": "America/New_York",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "interval": 60,
+    "format": "{:%I:%M}",
+    "max-length": 25
+  },
   "battery": {
     "interval": 60,
     "states": {
@@ -27,12 +34,6 @@
       "󰁹"
     ],
     "tooltip-format": "󰂍 {power} | {timeTo}"
-  },
-  "clock": {
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%F %T}",
-    "format-alt": "{:%F %T}",
-    "interval": 1
   },
   "niri/window": {
     "max-length": 50
